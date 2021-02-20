@@ -39,3 +39,32 @@ body {
     background: var(--bc);
     animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
   }
+
+  @keyframes revealText {
+    100% {
+      color: #0f0f0f;
+    }
+  }
+  
+  @keyframes revealingIn {
+  
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes revealingOut {
+  
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(100%);
+    }
+  
+  }
