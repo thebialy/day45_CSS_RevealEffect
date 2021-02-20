@@ -14,3 +14,28 @@ body {
     min-height: 100vh;
     padding: 20px;
 }
+
+.reveal-h1 {
+    font-size: calc(8px + 6vw);
+  }
+  
+  .reveal-div {
+    --t: calc(var(--td) + var(--d)); 
+    color: transparent;
+    padding: 4px;
+    position: relative;
+    overflow: hidden;
+    animation: revealText 0s var(--t) forwards;
+  }
+  
+  .reveal-div::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    padding-bottom: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--bc);
+    animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
+  }
