@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 *,
 *::before,
 *::after {
@@ -26,6 +28,7 @@ body {
     position: relative;
     overflow: hidden;
     animation: revealText 0s var(--t) forwards;
+    font-family: 'Roboto Slab', serif;
 }
   
 .reveal-div::after {
