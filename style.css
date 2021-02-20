@@ -17,18 +17,18 @@ body {
 
 .reveal-h1 {
     font-size: calc(8px + 6vw);
-  }
+}
   
-  .reveal-div {
+.reveal-div {
     --t: calc(var(--td) + var(--d)); 
     color: transparent;
     padding: 4px;
     position: relative;
     overflow: hidden;
     animation: revealText 0s var(--t) forwards;
-  }
+}
   
-  .reveal-div::after {
+.reveal-div::after {
     content: '';
     width: 0%;
     height: 100%;
@@ -38,13 +38,13 @@ body {
     left: 0;
     background: var(--bc);
     animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
-  }
+}
 
   @keyframes revealText {
     100% {
       color: #0f0f0f;
     }
-  }
+}
   
   @keyframes revealingIn {
   
@@ -55,7 +55,7 @@ body {
     100% {
       width: 100%;
     }
-  }
+}
   
   @keyframes revealingOut {
   
@@ -67,4 +67,4 @@ body {
       transform: translateX(100%);
     }
   
-  }
+}
